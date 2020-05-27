@@ -4,6 +4,8 @@ public interface Shape extends Point {
 
     float getArea();
 
+    String getName();
+
     default int getRotation() {
         return 0;
     }

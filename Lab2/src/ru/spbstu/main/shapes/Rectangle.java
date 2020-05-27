@@ -42,6 +42,12 @@ public class Rectangle implements Polygon {
         return this.width * this.height;
     }
 
+    public String getName(){
+        String name = "Rectangle";
+        return name;
+    }
+
+
     @Override
     public int getRotation() {
         return this.angle;

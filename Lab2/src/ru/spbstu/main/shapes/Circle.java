@@ -31,6 +31,12 @@ public class Circle implements Ellipse {
         return (float) (Math.PI * Math.pow(this.radius, 2));
     }
 
+    public String getName(){
+        String name = "Circle";
+        return name;
+    }
+
+
     @Override
     public float getLength() {
         return (float) (2 * Math.PI * this.radius);

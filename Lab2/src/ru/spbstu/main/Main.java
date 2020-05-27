@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             Circle circle1 = new Circle(10, 20, 30);
-            System.out.println("circle1: "+ circle1.getX() + ";" + circle1.getY()+ "   " + circle1.getArea());
+            System.out.println(circle1.getName() + " " + circle1.getX() + ";" + circle1.getY()+ "   " + circle1.getArea());
 
             Circle circle2 = new Circle(15, 24, 20);
             System.out.println("circle2: "+ circle2.getX() + ";" + circle2.getY()+ "   " + circle2.getArea());
@@ -44,7 +44,7 @@ public class Main {
                     circle1, circle2, circle3, circle4, rectangle1, rectangle2, rectangle3, triangle1, triangle2, triangle3
             };
             Shape biggestShape = findBiggestShape(shapes);
-            System.out.println("Biggest shape area: " + biggestShape.getArea());
+            System.out.println("Biggest shape area: " + biggestShape.getArea() + " " + biggestShape.getName());
         } catch (InvalidParameterException ex) {
             System.err.println(ex.getMessage());
         }

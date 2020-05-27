@@ -43,6 +43,12 @@ public class Triangle implements Polygon {
         return Math.abs((this.xA * (this.yB - this.yC) + this.xB * (this.yC - this.yA) + this.xC * (this.yA - this.yB)) / 2);
     }
 
+    public String getName(){
+        String name = "triangle";
+        return name;
+    }
+
+
     @Override
     public int getRotation() {
         return this.angle;
